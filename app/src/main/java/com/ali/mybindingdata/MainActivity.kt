@@ -16,10 +16,12 @@ class MainActivity : AppCompatActivity() {
         val view = mainBinding.root
         setContentView(view)
 
-
+        var count  = 0
 
         mainBinding.buttonOk.setOnClickListener {
             mainBinding.textViewResult.text = mainBinding.editTextEntery.text
+//            count +=1
+//            mainBinding.buttonOk.setText(""+count)
         }
     }
 }
